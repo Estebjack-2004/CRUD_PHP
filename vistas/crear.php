@@ -25,7 +25,7 @@
         }
 
         if($res){
-            echo "Se ha realizado el registro con éxito!";
+            echo "Se ha realizado el registro";
         } else {
             echo "ERROR: Falla en realizar el registro";
         }
