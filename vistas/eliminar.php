@@ -41,7 +41,6 @@ if (isset($_POST['eliminar'])) {
     <table>
         <thead>
             <tr>
-                <th>id</th>
                 <th>Cédula</th>
                 <th>Nombres</th>
                 <th>Apellidos</th>
