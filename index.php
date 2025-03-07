@@ -7,6 +7,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="stylesheet" href="CSS/css">
     <title>CRUD</title>
 </head>
 <body>
