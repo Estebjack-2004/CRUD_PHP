@@ -1,128 +1,146 @@
-/* Estilos generales para la página */
+/* Estilos generales */
 body {
-    font-family: 'Helvetica', sans-serif;
-    background-color: #e9f5f4; /* Color claro, relajante */
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    color: #333;
 }
 
-/* Encabezado de la página */
-header {
-    background-color: #2f8f8f; /* Verde azulado */
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 26px;
-}
-
-/* Sección principal */
-.main-content {
-    padding: 30px;
+.container {
+    width: 80%;
     margin: auto;
-    max-width: 1200px;
+    overflow: hidden;
 }
 
-/* Tabla */
+/* Encabezado */
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navegación */
+nav {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Estilos de formularios */
+form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background: #35424a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background: #45a049;
+}
+
+/* Tabla de personas */
 table {
     width: 100%;
-    border-spacing: 0;
     border-collapse: collapse;
-    margin-top: 30px;
+    margin: 20px 0;
 }
 
-th, td {
-    padding: 15px;
+table th,
+table td {
+    padding: 10px;
     text-align: left;
-    border-bottom: 1px solid #2c6da5;
+    border-bottom: 1px solid #ddd;
 }
 
-th {
-    background-color: #2f8f8f;
-    color: rgb(43, 61, 125);
+table th {
+    background: #35424a;
+    color: #ffffff;
 }
 
-td {
-    background-color: #f9f9f9;
-    font-size: 14px;
+table tr:hover {
+    background: #f1f1f1;
 }
 
-tr:nth-child(odd) td {
-    background-color: #f1f1f1; /* Color para las filas impares */
-}
-
-tr:hover td {
-    background-color: #b7d7d5; /* Hover suave */
-}
-
-
-
-/* Estilo de botones */
-button {
-    background-color: #2f8f8f;
-    color: white;
-    padding: 12px 25px;
+/* Estilos de botones */
+.btn {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 15px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
+    text-decoration: none;
 }
 
-button:hover {
-    background-color: #248f8f;
+.btn:hover {
+    background: #45a049;
 }
 
-/* Formulario de contacto */
-input[type="text"], input[type="email"], textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-input[type="password"]
-{
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-input[type="submit"] {
-    background-color: #2f8f8f;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-input[type="submit"]:hover {
-    background-color: #248f8f;
-}
-
-/* Estilo del pie de página */
-footer {
-    background-color: #2f8f8f;
-    color: white;
-    text-align: center;
+/* Mensajes de error y éxito */
+.alert {
     padding: 15px;
-    font-size: 14px;
+    margin: 20px 0;
+    border-radius: 5px;
 }
 
-/* Estilos de móvil */
-@media (max-width: 768px) {
-    header {
-        font-size: 22px;
-    }
-    .main-content {
-        padding: 15px;
-    }
-    table, th, td {
-        font-size: 12px;
-    }
+.alert-success {
+    background-color: #dff0d8;
+    color: #3c763d;
+}
+
+.alert-error {
+    background-color: #f2dede;
+    color: #a94442;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #35424a;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
